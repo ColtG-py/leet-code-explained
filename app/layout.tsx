@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Navbar from './components/Navbar'
 import MyProfilePic from './components/MyProfilePic'
 import Banner from './components/Banner'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Software - Explained',
@@ -21,6 +22,7 @@ export default function RootLayout({
         <MyProfilePic />
         <Banner />
         {children}
+        <Analytics />
       </body>
     </html>
   )
