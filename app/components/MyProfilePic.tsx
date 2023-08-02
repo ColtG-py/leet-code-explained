@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function MyProfilePic() {
     return (
-        <section className="w-full mx-auto">
+        <section className="w-full mx-auto mb-20">
             <Image
                 className="border-4 border-black dark:border-slate-500 drop-shadow-xl shadow-black rounded-full mx-auto mt-8"
                 src="/images/websitepic.jpg"
