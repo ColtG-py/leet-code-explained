@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="dark:bg-slate-800">
         <Navbar />
         <MyProfilePic />
-        <Banner />
+        {/* <Banner /> */}
         {children}
         <Analytics />
       </body>
