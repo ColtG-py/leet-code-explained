@@ -8,7 +8,7 @@ export default function Navbar() {
             <div className="prose prose-xl mx-auto flex justify-between flex-col sm:flex-row">
                 <h1 className={`${robotoMono.className} underlinetext-3xl font-extrabold grid place-content-center mb-2 md:mb-0 text-3xl font-bold grid place-content-center mb-2 md:mb-0`} >
                     <Link href="/" className="text-white-700 text-white/90 no-underline hover:text-white">
-                        Leet code; explained.
+                        Software, explained.
                     </Link>
                 </h1>
                 <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-5xl">
