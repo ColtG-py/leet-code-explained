@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <nav className="bg-slate-680 p-4 sticky top-0 drop-shadow-xl z-10">
             <div className="prose prose-xl mx-auto flex justify-between flex-col sm:flex-row">
-                <h1 className={`${robotoMono.className} underlinetext-3xl font-extrabold grid place-content-center mb-2 md:mb-0 text-3xl font-bold grid place-content-center mb-2 md:mb-0`} >
+                <h1 className={`${robotoMono.className} underlinetext-3xl font-extrabold grid place-content-center mb-2 md:mb-0 text-2xl font-bold grid place-content-center mb-2 md:mb-0`} >
                     <Link href="/" className="text-white-700 text-white/90 no-underline hover:text-white">
                         Software, explained.
                     </Link>
