@@ -6,10 +6,18 @@ chapter: '0'
 
 ## I'm not the best, but it's fine.
 
-I'm not the smartest engineer, nor am I the most well spoken nor well written. I'm very average. I struggle with syntax. I struggle with data structures. I make dumb mistakes, forget to write documentation, and neglect unit tests.
+Hi. My name's Colt, and I've been a software engineer for 4 years now, although I've been a hobbyist programmer for much longer than that. 
 
-All this to say, I'm a very human software developer. Likely a "**1x**", by industry standards. But I'm improving, and I want to learn more about being a great engineer in my own mind. Being my version of a "great" engineer is not just about my innate talent but also about constant learning, perseverance, and my ability to adapt. In other words, I don't care how good you are, or how good someone is who works in **FAANG**. I'm on my path, my "pursuit of happiness", but unlike Kid Cudi I won't be fine once I get it, because "it" is a moving target.
+I absolutely love software development. The feeling of accomplishment when a new feature gets shipped, the satisfaction of a functional prototype, and the pride that comes with knowing your product is a well oiled machine. 
 
-So, I want to track this journey, which is the point of this site. And there will be an outcome for you; I'll use my own lack of knowledge to explain these things in dead simple terms. So let's all pursue our own journeys independently, but work together to help each other. 
+However, I've got a major gripe with one part of software development: tutorials. They tell you *what* to do. Which is helpful, if you already understand the problem you are trying to solve. If you are new, however, the **why** is just as important as the **what**. Neglecting the why is how you end up with terrible architectures. It's how you nail yourself to a terrible design philosophy. It's how you encur tech debt.
+
+So if the **why** is so important, why does no one lump that in with the **what**? This has led me to make a number of mistakes in my career, from bad architecture to time wasted on a temporary solution when the true problem was elsewhere.
+
+My hope with these posts is to explain exactly why you should do something a certain way, not just what the solution is. It's worth mentioning, by no means am I a genius developer. I make tons of mistakes, and have spent many nights back tracking git to figure out when something went awry. 
+
+But I'm always improving, which is a far better attribute than just innate talent for development. And, I know exactly what it is like to not understand how something works. When I started programming, I couldn't understand the rationale behind loops, or basic control structures. But, given time and practice, I'm now firmly in a career as a developer. All this to say, I can explain the **why** in easy to understand terms. No ego, no power tripping. Just the answer, and the reason you should use it.
+
+I want to give solutions to common problems, along with the **why**, which is the point of this site. The outcome for you: I'll use my own lack of knowledge to explain these things in dead simple terms. The outcome for me: I get to exercise my passion for teaching and engineering all at once. So let's all pursue our own journeys independently, but work together to help each other. 
 
 Remember, no one can fault you for trying and failing. But you can, and will, be faulted for failing to try. 
