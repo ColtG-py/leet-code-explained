@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import Post from "../types/types"
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -25,6 +26,8 @@ export function getSortedPostsData() {
             title: matterResult.data.title,
             date: matterResult.data.date,
             chapter: matterResult.data.chapter,
+            tags: matterResult.data.tags,
+            category: matterResult.data.category,
         }
 
         // Combine the data with the id
@@ -52,6 +55,8 @@ export async function getPostData(id: string) {
         title: matterResult.data.title,
         date: matterResult.data.date,
         chapter: matterResult.data.chapter,
+        tags: matterResult.data.tags,
+        category: matterResult.data.category,
         contentHtml,
     }
 

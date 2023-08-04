@@ -6,7 +6,7 @@ export const cormorantGaramond = Cormorant_Garamond({
 })
 
 export const robotoMono = Roboto_Mono({
-    subsets: ['latin'],
-    weight: '400',
-  })
+  subsets: ['latin'],
+  weight: '400',
+})
   

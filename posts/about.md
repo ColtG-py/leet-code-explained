@@ -1,7 +1,9 @@
 ---
-title: 'What is this? Some background info.'
+title: 'What is this?'
 date: '2023-07-25'
 chapter: '0'
+tags: ['Meta']
+category: 'Just Chatting'
 ---
 
 ## Who am I?
