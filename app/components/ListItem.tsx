@@ -27,7 +27,7 @@ export default function ListItem({ post }: Props) {
             <div className="flex mb-1">
                 <p className="mt-1 flex-none text-sm mr-2 animate-pulse">{formattedDate}</p>
                 {tags.map((tag: Tag, index: number) => (
-                    <Badge className="flex-none" variant="outline">
+                    <Badge key={index} className="flex-none" variant="outline">
                         {tag}
                     </Badge>
                 ))}
