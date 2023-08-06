@@ -14,8 +14,7 @@ export default function Footer() {
                     <Link className="text-white/90 hover:text-white" href="https://ko-fi.com/coltgainey">     
                         <FaCoffee />
                     </Link>
-                </div>
-                
+                </div>              
             </nav>
         </footer>
     )
