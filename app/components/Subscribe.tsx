@@ -68,7 +68,7 @@ export default function Subscribe() {
                 </FormItem>
                 )}
             />
-            <Button type="submit">Subscribe to not miss posts.</Button>
+            <Button type="submit">Don't miss new posts.</Button>
             </form>
         </div>
       </Form>
