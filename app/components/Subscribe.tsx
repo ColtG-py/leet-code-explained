@@ -68,7 +68,7 @@ export default function Subscribe() {
                 </FormItem>
                 )}
             />
-            <Button type="submit">Don't miss new posts.</Button>
+            <Button type="submit">Newsletter</Button>
             </form>
         </div>
       </Form>
