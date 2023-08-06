@@ -68,7 +68,7 @@ export default function Subscribe() {
                 </FormItem>
                 )}
             />
-            <Button type="submit">Newsletter</Button>
+            <Button type="submit">Subscribe.</Button>
             </form>
         </div>
       </Form>
