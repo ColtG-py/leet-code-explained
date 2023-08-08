@@ -1,5 +1,5 @@
 ---
-title: 'What is this?'
+title: 'About this site'
 date: '2023-07-25'
 chapter: '0'
 tags: ['Meta']
