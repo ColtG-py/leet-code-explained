@@ -189,7 +189,7 @@ pip install -r requirements.txt
 Again, from **their own virtual environment they've created**. That's the power of virtual environments! 
 
 ### Project Sample Code
-I've provided some sample code in this [repository](https://github.com/ColtG-py/leet-code-explained "repo") which contains the project I described above. You'll still need to create the virtual environment, but you should have all the knowledge you need to do this now.
+I've provided some sample code in this [repository](https://github.com/ColtG-py/leet-code-explained/tree/master/sample-code/3-venv "repo") which contains the project I described above. You'll still need to create the virtual environment, but you should have all the knowledge you need to do this now.
 
 Thanks,
 
