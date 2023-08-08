@@ -1,7 +1,7 @@
 ---
 title: 'Leet Code 1: Two Sum'
 date: '2023-08-02'
-chapter: '2'
+chapter: '1'
 tags: ['Python', 'Leet Code']
 category: 'Beginner Friendly'
 ---

@@ -34,7 +34,7 @@ export function getSortedPostsData() {
         return post
     });
     // Sort posts by date
-    return allPostsData.sort((a, b) => a.chapter < b.chapter ? -1 : 1);
+    return allPostsData.sort((a, b) => a.chapter > b.chapter ? -1 : 1);
 }
 
 export async function getPostData(id: string) {

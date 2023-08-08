@@ -1,7 +1,7 @@
 ---
 title: 'Why you should use venv'
 date: '2023-08-08'
-chapter: '1'
+chapter: '2'
 tags: ['Python']
 category: 'Beginner Friendly'
 ---
