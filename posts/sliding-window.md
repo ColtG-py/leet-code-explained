@@ -14,7 +14,7 @@ What if I wanted to know, from left to right, what the biggest distance was betw
 
 ![example-2][example-2]
 
-Visually, this is pretty easy to do. From left to right, you look for the lowest point, followed by a high point. You 'judge' the height, then continue looking. If you ever spot a new lowest point, you mentally assign that as the new 'minimum' then continue looking for new peaks.
+Visually, this is pretty easy to do. From left to right, you look for the lowest point, followed by a high point. You 'judge' the height, then continue looking. If you ever spot a new lowest point, you mentally assign that as the new 'minimum' and then continue looking for new peaks.
 
 Let's use another example. Pretend this is stock market data, and you are trying to figure out the best time to buy and sell a stock ([LC#121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "buy and sell stocks")):
 
