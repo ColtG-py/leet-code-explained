@@ -1,76 +1,46 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormMessage,
-  } from "@/components/ui/form"
+import { useState } from "react"
 import { toast } from "@/components/ui/use-toast"
 
-interface SubscribeResponse {
-  error: string;
-}
-
-const FormSchema = z.object({
-    email: z.string().min(5, {
-      message: "Email must be at least 5 characters.",
-    }),
-})
-
 export default function Subscribe() {
+    const [value, setValue] = useState("")
 
     const subscribe = async (email: string) => {
+        if (email.length < 5) return
+
         const res = await fetch('/api/subscribe', {
-        body: JSON.stringify({
-            email: email,
-        }),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        method: 'POST',
-        });
-
-        const { error } = await res.json() as SubscribeResponse;
-    };
-
-    const form = useForm<z.infer<typeof FormSchema>>({
-      resolver: zodResolver(FormSchema),
-    })
-   
-    function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast({
-            title: "Thanks, you've subscribed 🎉",
-            description: "You'll be sent an email the next time an article is posted. Thanks for your support!"
+            body: JSON.stringify({ email }),
+            headers: { 'Content-Type': 'application/json' },
+            method: 'POST',
         })
-        subscribe(data['email'])
+
+        await res.json()
+
+        toast({
+            title: "Thanks, you've subscribed",
+            description: "You'll be sent an email the next time an article is posted."
+        })
+
+        setValue("")
     }
-   
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter") {
+            e.preventDefault()
+            subscribe(value)
+        }
+    }
+
     return (
-      <Form {...form}>
-        <div className="text-white">
-            <form onSubmit={form.handleSubmit(onSubmit)} className="flex w-full max-w-sm items-center space-x-2 text-white">
-            <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                <FormItem>
-                    <FormControl className="text-black">
-                    <Input placeholder="Email" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                </FormItem>
-                )}
-            />
-            <Button type="submit">Subscribe.</Button>
-            </form>
-        </div>
-      </Form>
+        <input
+            type="email"
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="get-notified@email.com"
+            className="h-8 w-52 rounded-full bg-background/50 border border-border px-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+            style={{ fontSize: "18px" }}
+        />
     )
-  }
+}

@@ -1,12 +1,18 @@
-import { Cormorant_Garamond, Roboto_Mono } from "@next/font/google"
+import localFont from "next/font/local"
 
-export const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['cyrillic'],
-  weight: '300',
+export const monogram = localFont({
+  src: [
+    {
+      path: "../fonts/ttf/monogram-extended.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/ttf/monogram-extended-italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-monogram",
+  display: "swap",
 })
-
-export const robotoMono = Roboto_Mono({
-  subsets: ['latin'],
-  weight: '400',
-})
-  
